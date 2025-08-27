@@ -39,6 +39,7 @@ section{
     padding: 2rem 5%;
     background: var(--main-color);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     transition: all 0.5s ease; 
 }
 .logo{
@@ -124,7 +125,7 @@ span{
 }
 
 .social-media a{
-    display: inline-flex    ;
+    display: inline-flex;
     justify-content: center ;
     align-items: center;
     width: 42px;
@@ -135,7 +136,7 @@ span{
     font-size: 2rem;
     color:var(--main-color);
     margin:3rem 1.5rem 3rem 0;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 .social-media a:hover{
     transform: scale(1.2) translateY(-10px);
@@ -188,7 +189,7 @@ span{
     text-align: center;
  }
  .about-content{
-    padding: 0 4 rem;
+    padding: 0 4rem;
  }
 
  .about-content h2{
@@ -204,6 +205,16 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
  }
+.about-card {
+    background: rgba(255, 255, 255, 0.7); /* semi-transparent for effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 15px;
+}
+
 /* Services Section code*/
 
 .services h2{
@@ -215,7 +226,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: warp;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -377,8 +388,10 @@ span{
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        background: all 0.5s ease;
+        background: var(--main-color);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        transition: all 0.5s ease;
     }
     .navbar a{
         display: block;

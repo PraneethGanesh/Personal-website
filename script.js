@@ -16,3 +16,8 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop:true,
   });
+document.getElementById('readMoreBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const card = document.getElementById('aboutCard');
+    card.style.display = card.style.display === 'none' ? 'block' : 'none';
+});
