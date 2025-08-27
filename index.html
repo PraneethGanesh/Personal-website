@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>My Website</title>
 </head>
+
 <body>
     <!-- Header section code -->
 
@@ -21,40 +23,47 @@
         </nav>
     </header>
     <!-- Home section code -->
-     <section class="home" id="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="./image/Praneeth.jpg" alt="Profile Image">
         </div>
 
-            <div class="home-content">
-                <h3>Hello Myself</h3>
-                <h1>Praneeth Ganesh</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/praneeth-ganesh-aa9b4b268/"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/PraneethGanesh"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.instagram.com/praneeth_ganesh/"><i class='bx bxl-instagram' ></i></a>
-                </div>
-                <a href="https://www.overleaf.com/project/67a88261b3eafe5f5a56da5f" class="btn">My resume</a>
+        <div class="home-content">
+            <h3>Hello Myself</h3>
+            <h1>Praneeth Ganesh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/praneeth-ganesh-aa9b4b268/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/PraneethGanesh"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/praneeth_ganesh/"><i class='bx bxl-instagram'></i></a>
             </div>
-     </section>
-     <!-- About section code -->
-      <section class="about" id="about">
+            <a href="https://www.overleaf.com/project/67a88261b3eafe5f5a56da5f" class="btn">My resume</a>
+        </div>
+    </section>
+    <!-- About section code -->
+    <section class="about" id="about">
         <div class="about-content">
             <h2 class="heading">About<span>Me</span></h2>
-            <h3>I'm a <span>Programmer </span></h3>
-            <a href="#" class="btn">Read More</a>
+            <h3>I'm a <span>Software Developer </span></h3>
+            <a href="#" class="btn" id="readMoreBtn">Read More</a>
+            <div id="aboutCard" class="about-card" style="display: none;">
+                <p>
+                    Hi, I'm Praneeth Ganesh, a passionate software developer skilled in web and app development. I enjoy
+                    solving problems, learning new technologies, and building impactful projects. My interests include
+                    programming, collaborating with teams, and continuous self-improvement.
+                </p>
+            </div>
         </div>
         <div class="about-img">
             <img src="/image/about.jpg" alt="About image">
         </div>
-      </section>
+    </section>
     <!-- services section code -->
-     <section class="services" id="services">
+    <section class="services" id="services">
         <h2 class="heading">My <span>Services</span> </h2>
         <div class="services-container">
             <div class="services-box">
-                <i class='bx bxs-terminal' ></i>
+                <i class='bx bxs-terminal'></i>
                 <h3>Computer programmer</h3>
                 <p>I love programming</p>
                 <a href="#" class="btn">Read More</a>
@@ -72,10 +81,10 @@
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- Contacts Section code -->
-      <section class="contact" id="contact">
+    <!-- Contacts Section code -->
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="#">
             <div class="input-box">
@@ -85,20 +94,21 @@
             <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-      </section>
-      <!-- Footer Section Code -->
-       <footer class="footer">
+    </section>
+    <!-- Footer Section Code -->
+    <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/praneeth-ganesh-aa9b4b268/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.linkedin.com/in/praneeth-ganesh-aa9b4b268/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/PraneethGanesh"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/praneeth_ganesh/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.instagram.com/praneeth_ganesh/"><i class='bx bxl-instagram'></i></a>
         </div>
         <p class="copyright">
             &copy; Praneeth - All Rights Reserve
         </p>
-       </footer>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 
 </body>
+
 </html>

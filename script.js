@@ -10,9 +10,14 @@ window.onscroll=()=>{
 }
 
 const typed = new Typed('.multiple-text', {
-    strings: ['DevOps Engineer ', 'Blockchain Developer','Frontend Developer','Backend developer'],
+    strings: ['DevOps Engineer ','Frontend Developer','Backend developer'],
     typeSpeed: 60,
     backSpeed: 60,
     backDelay: 1000,
     loop:true,
   });
+document.getElementById('readMoreBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const card = document.getElementById('aboutCard');
+    card.style.display = card.style.display === 'none' ? 'block' : 'none';
+});
