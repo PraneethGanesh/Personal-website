@@ -212,7 +212,18 @@ span{
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: none;
     margin-top: 15px;
+}
+
+.about-card.visible {
+    display: block;
+}
+
+.about-card.hidden {
+    display: none;
 }
 
 /* Services Section code*/

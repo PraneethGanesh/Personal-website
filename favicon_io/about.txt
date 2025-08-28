@@ -1,0 +1,1 @@
+This folder contains favicon files for my profile. Favicons are small icons displayed in browser tabs, bookmarks, and shortcuts. They help visually identify my website and enhance its branding. The files here include various sizes and formats to ensure compatibility across different devices and browsers.
