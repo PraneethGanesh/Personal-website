@@ -9,6 +9,20 @@ window.onscroll=()=>{
     navbar.classList.remove('active');
 }
 
+document.querySelectorAll('.view-details-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const details = this.previousElementSibling;
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+            this.textContent = "Hide Details";
+        } else {
+            details.style.display = "none";
+            this.textContent = "View Details";
+        }
+    });
+});
+
 const typed = new Typed('.multiple-text', {
     strings: ['DevOps Engineer ','Frontend Developer','Backend developer'],
     typeSpeed: 60,
@@ -16,6 +30,7 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop:true,
   });
+
 document.getElementById('readMoreBtn').addEventListener('click', function(e) {
     e.preventDefault();
     const card = document.getElementById('aboutCard');
