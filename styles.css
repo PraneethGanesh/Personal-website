@@ -1,3 +1,4 @@
+/* General Reset and Variables */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +25,6 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-
 }
 
 section {
@@ -32,6 +32,7 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* Header */
 .header {
     position: fixed;
     width: 100%;
@@ -45,7 +46,6 @@ section {
     background: var(--main-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     transition: all 0.5s ease;
 }
 
@@ -81,7 +81,7 @@ section {
     display: none;
 }
 
-/* Home section Code*/
+/* Home Section */
 .home {
     display: flex;
     justify-content: center;
@@ -107,11 +107,9 @@ section {
     0% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-2.4rem);
     }
-
     100% {
         transform: translateY(0);
     }
@@ -171,19 +169,15 @@ span {
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: none;
     font-size: 1.6rem;
     color: var(--bg-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease;
-}
-
-.btn {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
 
-/* About section code*/
+/* About Section */
 .about {
     display: flex;
     align-items: center;
@@ -232,10 +226,8 @@ span {
 
 .about-card {
     background: rgba(255, 255, 255, 0.7);
-    /* semi-transparent for effect */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -253,7 +245,7 @@ span {
     display: none;
 }
 
-/* Projects Section code */
+/* Projects Section */
 .projects {
     background: var(--snd-bg-color);
     padding: 8rem 0;
@@ -274,7 +266,6 @@ span {
     align-items: stretch;
 }
 
-/* Use .projects-box for each card to match your HTML structure */
 .projects-box {
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(6px);
@@ -343,27 +334,82 @@ span {
     border-color: #a34b13;
 }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projects-box {
-        max-width: 90vw;
-        flex: 1 1 100%;
-    }
+/* Certifications Section */
+.certificates {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Services Section code*/
+.certificates .heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
 
-.services h2 {
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.certificates-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.certificates-box:hover {
+    transform: scale(1.05);
+}
+
+.cert-img {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cert-img img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.certificates-box:hover .cert-img img {
+    transform: scale(1.1);
+}
+
+.certificates-box h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.certificates-box p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #a34b13;
+}
+
+/* Skills Section */
+.skills h2 {
     text-align: center;
     margin-bottom: 5rem;
 }
 
-.services-container {
+.skills-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,7 +417,7 @@ span {
     gap: 2rem;
 }
 
-.services-container .services-box {
+.skills-container .skills-box {
     flex: 1 1 30rem;
     background: var(--snd-bg-color);
     padding: 6rem 2rem 6rem;
@@ -381,26 +427,26 @@ span {
     transition: 0.3s ease;
 }
 
-.services-container .services-box:hover {
+.skills-container .skills-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
-.services-box i {
+.skills-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3 {
+.skills-box h3 {
     font-size: 2.6rem;
 }
 
-.services-box p {
+.skills-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
-/* Contact Services Code */
+/* Contact Section */
 .contact {
     background: var(--snd-bg-color);
 }
@@ -449,7 +495,7 @@ span {
     margin-top: 2rem;
 }
 
-/* Footer section code */
+/* Footer Section */
 .footer {
     position: relative;
     bottom: 0;
@@ -474,7 +520,6 @@ span {
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    /*border-radius: 0 10px*/
     margin: 0 10px;
     transition: 0.3s ease;
 }
@@ -493,8 +538,7 @@ span {
     color: var(--text-color);
 }
 
-/* Responsive Design Code */
-
+/* Responsive Design */
 @media (max-width:1200px) {
     html {
         font-size: 55%;
@@ -505,19 +549,15 @@ span {
     .header {
         padding: 2rem 3%;
     }
-
-    .section {
-        padding: 10rem 3%;
+    section {
+        padding: 10rem 3% 2rem;
     }
-
-    .services {
+    .skills {
         padding: 7rem;
     }
-
     .contact form .input-box input {
         width: 100%;
     }
-
     .footer {
         padding: 2rem 3%;
     }
@@ -527,7 +567,6 @@ span {
     #menu-icon {
         display: block;
     }
-
     .navbar {
         position: absolute;
         top: 100%;
@@ -539,69 +578,65 @@ span {
         background: var(--main-color);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        /* Safari support */
         transition: all 0.5s ease;
     }
-
     .navbar a {
         display: block;
         padding: 17px;
         font-size: 22px;
     }
-
     .navbar.active {
         right: 0;
     }
-
     .home {
         flex-direction: column;
     }
-
     .home-content h3 {
         font-size: 2.6rem;
     }
-
     .home-content h1 {
         font-size: 5rem;
     }
-
     .home-content {
         order: 2;
         margin-left: 1rem;
     }
-
     .home-img img {
         width: 70vw;
         margin-top: 4rem;
     }
-
     .about {
         flex-direction: column-reverse;
     }
-
     .about-img img {
         width: 70vw;
         margin-top: 4rem;
     }
-
-    .services h2 {
+    .skills h2 {
         margin-bottom: 3rem;
-    }
-}
-
-@media (max-width:617px) {
-    .home-img img {
-        margin-top: 8rem;
-    }
-
-    .about-img img {
-        width: 70vw;
-        margin-top: 4rem;
     }
 }
 
 @media (max-width:617px) {
     html {
         font-size: 50%;
+    }
+    .home-img img {
+        margin-top: 8rem;
+    }
+    .about-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-box {
+        max-width: 90vw;
+        flex: 1 1 100%;
     }
 }
